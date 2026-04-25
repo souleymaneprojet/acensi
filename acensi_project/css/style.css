@@ -18,6 +18,7 @@ html {
 
 body {
   margin: 0;
+  text-align: justify;
   font-family: 'Open Sans', Arial, sans-serif;
   color: var(--text);
   background: #fff;
@@ -34,11 +35,13 @@ a,
 
 a {
   text-decoration: none;
+  text-align: justify;
 }
 
 .container {
   width: min(1115px, calc(100% - 48px));
   margin: auto;
+  text-align: justify;
 }
 
 .hero {
@@ -129,6 +132,7 @@ a {
   position: relative;
   z-index: 2;
   text-align: center;
+  text-align: justify;
   margin-top: 125px;
 }
 
@@ -142,6 +146,7 @@ a {
 
 .section {
   padding: 28px 0 38px;
+  text-align: justify;
 }
 
 .white {
@@ -157,6 +162,7 @@ a {
   color: #000;
   font-size: 31px;
   line-height: 1.2;
+  text-align: justify;
   margin: 0 0 30px;
   font-weight: 800;
 }
@@ -164,6 +170,7 @@ a {
 .section-title:after,
 .short-line {
   content: "";
+  text-align: justify;
   display: block;
   width: 42px;
   height: 3px;
@@ -196,7 +203,8 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: center
+  text-align: justify;
   transition: .35s ease;
   position: relative;
   overflow: hidden;
@@ -228,11 +236,13 @@ a {
   font-size: 22px;
   margin: 7px 0 4px;
   color: #000;
+  text-align: justify;
 }
 
 .stat-card p {
   font-size: 14px;
   margin: 0 10px;
+  text-align: justify;
 }
 
 .icon-bubble,
@@ -386,6 +396,7 @@ a {
   color: #000;
   margin: 0;
   font-weight: 800;
+  text-align: justify;
 }
 
 .short-line {
@@ -413,6 +424,7 @@ a {
 .jobs a:not(.primary-btn) {
   color: #555;
   text-decoration: underline;
+  text-align: justify;
 }
 
 .footer {
@@ -433,6 +445,7 @@ a {
   font-size: 27px;
   margin: 0 0 10px;
   font-weight: 800;
+  text-align: justify;
 }
 
 .footer a,
@@ -556,6 +569,7 @@ a {
 
   .hero h1 {
     font-size: 34px;
+    text-align: justify;
   }
 
   .stats-grid,
@@ -568,6 +582,7 @@ a {
   .section-title,
   .jobs-title {
     font-size: 26px;
+    text-align: justify;
   }
 
   .footer-logo {
