@@ -1,3 +1,4 @@
+/* Variables globales du site */
 :root {
   --blue: #004fa3;
   --blue2: #155aa9;
@@ -8,14 +9,17 @@
   --shadow: 0 6px 14px rgba(0, 0, 0, .16);
 }
 
+/* Reset général */
 * {
   box-sizing: border-box;
 }
 
+/* Scroll fluide */
 html {
   scroll-behavior: smooth;
 }
 
+/* Style global du body */
 body {
   margin: 0;
   font-family: 'Open Sans', Arial, sans-serif;
@@ -24,6 +28,7 @@ body {
   line-height: 1.55;
 }
 
+/* Police des titres, liens et logo */
 h1,
 h2,
 h3,
@@ -32,15 +37,18 @@ a,
   font-family: 'Montserrat', Arial, sans-serif;
 }
 
+/* Style des liens */
 a {
   text-decoration: none;
 }
 
+/* Conteneur principal */
 .container {
   width: min(1115px, calc(100% - 48px));
   margin: auto;
 }
 
+/* Section hero */
 .hero {
   position: relative;
   min-height: 536px;
@@ -51,6 +59,7 @@ a {
     linear-gradient(120deg, #555963 0%, #081322 60%, #08366e 100%);
 }
 
+/* Effet visuel du hero */
 .hero:before {
   content: "";
   position: absolute;
@@ -61,12 +70,14 @@ a {
   transform: scale(1.03);
 }
 
+/* Overlay sombre du hero */
 .hero-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, .24);
 }
 
+/* Barre de navigation */
 .navbar {
   position: relative;
   z-index: 4;
@@ -78,6 +89,7 @@ a {
   padding: 24px 0;
 }
 
+/* Logo */
 .logo,
 .footer-logo {
   font-size: 42px;
@@ -86,6 +98,7 @@ a {
   color: #fff;
 }
 
+/* Liens de navigation */
 .nav-links {
   display: flex;
   gap: 34px;
@@ -95,6 +108,7 @@ a {
   align-items: center;
 }
 
+/* Style des liens du menu */
 .nav-links a {
   color: white;
   font-weight: 700;
@@ -102,6 +116,7 @@ a {
   opacity: .92;
 }
 
+/* Lien actif du menu */
 .nav-links a.active:after {
   content: "";
   display: block;
@@ -111,12 +126,14 @@ a {
   margin: 7px auto 0;
 }
 
+/* Bouton menu mobile */
 .menu-toggle {
   display: none;
   background: none;
   border: 0;
 }
 
+/* Barres du menu burger */
 .menu-toggle span {
   display: block;
   width: 28px;
@@ -125,6 +142,7 @@ a {
   margin: 5px;
 }
 
+/* Contenu du hero */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -132,6 +150,7 @@ a {
   margin-top: 125px;
 }
 
+/* Titre principal */
 .hero h1 {
   font-size: 68px;
   line-height: 1.22;
@@ -140,19 +159,23 @@ a {
   letter-spacing: .3px;
 }
 
+/* Sections générales */
 .section {
   padding: 28px 0 38px;
 }
 
+/* Section blanche */
 .white {
   background: #fff;
 }
 
+/* Section grise */
 .grey {
   background: #f4f4f6;
   padding-top: 26px;
 }
 
+/* Titres de section */
 .section-title {
   color: #000;
   font-size: 31px;
@@ -161,6 +184,7 @@ a {
   font-weight: 800;
 }
 
+/* Ligne décorative sous les titres */
 .section-title:after,
 .short-line {
   content: "";
@@ -171,6 +195,7 @@ a {
   margin-top: 13px;
 }
 
+/* Texte d’introduction */
 .intro {
   font-size: 15px;
   line-height: 1.7;
@@ -179,6 +204,7 @@ a {
   text-align: justify;
 }
 
+/* Grilles des cartes */
 .stats-grid,
 .expertise-grid {
   display: grid;
@@ -186,6 +212,7 @@ a {
   gap: 29px;
 }
 
+/* Cartes statistiques et expertises */
 .stat-card,
 .expert-card {
   height: 270px;
@@ -202,12 +229,14 @@ a {
   overflow: hidden;
 }
 
+/* Effet hover des cartes */
 .stat-card:hover,
 .expert-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 14px 25px rgba(0, 0, 0, .2);
 }
 
+/* Barre animée des cartes */
 .stat-card:before,
 .expert-card:before {
   content: "";
@@ -219,22 +248,26 @@ a {
   transition: .35s;
 }
 
+/* Affichage de la barre au survol */
 .stat-card:hover:before,
 .expert-card:hover:before {
   transform: scaleX(1);
 }
 
+/* Titre des cartes statistiques */
 .stat-card h3 {
   font-size: 22px;
   margin: 7px 0 4px;
   color: #000;
 }
 
+/* Texte des cartes statistiques */
 .stat-card p {
   font-size: 14px;
   margin: 0 10px;
 }
 
+/* Bulles d’icônes */
 .icon-bubble,
 .line-icon {
   width: 86px;
@@ -245,19 +278,24 @@ a {
   position: relative;
 }
 
+/* Icônes statistiques */
 .people-icon:after {
   content: "👥";
   font-size: 45px;
 }
 
 .money-icon:after {
-  content: "$↗";
+  content: "$";
   font-size: 54px;
+  align-items: center;
+  justify-content: center;
 }
 
 .chart-icon:after {
-  content: "▁▃▆↗";
+  content: "▁▃▆";
   font-size: 36px;
+  align-items: center;
+  justify-content: center;
 }
 
 .hand-icon:after {
@@ -265,6 +303,7 @@ a {
   font-size: 42px;
 }
 
+/* Positionnement des icônes */
 .icon-bubble:after {
   position: absolute;
   inset: 8px 0 0;
@@ -273,10 +312,12 @@ a {
   color: #000;
 }
 
+/* Cartes expertises */
 .expert-card {
   height: 275px;
 }
 
+/* Titre des cartes expertises */
 .expert-card h3 {
   font-size: 22px;
   line-height: 1.1;
@@ -285,6 +326,7 @@ a {
   font-weight: 500;
 }
 
+/* Icônes expertises */
 .line-icon:after {
   position: absolute;
   inset: 12px 0 0;
@@ -309,11 +351,13 @@ a {
   content: "◎";
 }
 
+/* Section esprit / carrière */
 .spirit {
   padding: 126px 0 60px;
   background: white;
 }
 
+/* Grille de la section spirit */
 .spirit-grid {
   display: grid;
   grid-template-columns: 1fr 1.25fr;
@@ -321,12 +365,14 @@ a {
   align-items: center;
 }
 
+/* Texte de la section spirit */
 .spirit p {
   font-size: 15px;
   text-align: justify;
   margin-bottom: 48px;
 }
 
+/* Bouton secondaire */
 .outline-btn {
   display: inline-block;
   border: 2px solid var(--blue);
@@ -337,50 +383,37 @@ a {
   transition: .3s;
 }
 
+/* Hover du bouton secondaire */
 .outline-btn:hover {
   background: var(--blue);
   color: white;
 }
 
-.team-photo {
-  height: 270px;
-  border-radius: 4px;
-  box-shadow: var(--shadow);
-  overflow: hidden;
-  position: relative;
-  background: linear-gradient(#719d49 0 38%, #9ad171 39% 45%, #f2d19d 46% 100%);
-}
 
-.team-photo:before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 10% 10%, #355b2e 0 4%, transparent 6%),
-    radial-gradient(circle at 30% 8%, #305628 0 7%, transparent 9%),
-    radial-gradient(circle at 70% 6%, #385f2f 0 7%, transparent 10%),
-    linear-gradient(90deg, transparent 0 12%, rgba(64, 40, 20, .5) 13% 14%, transparent 15% 45%, rgba(64, 40, 20, .45) 46% 47%, transparent 48%);
-}
 
+/* Bandeau sur l’image équipe */
 .people-row {
   position: absolute;
-  left: 5%;
-  right: 5%;
+  left: 0%;
+  right: 0%;
   bottom: 50px;
   text-align: center;
   color: white;
   background: rgba(0, 79, 163, .82);
-  border-radius: 35px;
-  padding: 20px;
+ 
   font-weight: 800;
+  object-position: left center;
   letter-spacing: 8px;
 }
 
+/* Section jobs / contact */
 .jobs {
   background: #e9ebef;
   padding: 14px 0 50px;
   text-align: center;
 }
 
+/* Titre jobs */
 .jobs-title {
   font-size: 30px;
   color: #000;
@@ -388,10 +421,12 @@ a {
   font-weight: 800;
 }
 
+/* Ligne courte centrée */
 .short-line {
   margin: 9px auto 78px;
 }
 
+/* Bouton principal */
 .primary-btn {
   display: inline-block;
   background: var(--blue2);
@@ -402,25 +437,30 @@ a {
   margin-bottom: 32px;
 }
 
+/* Hover bouton principal */
 .primary-btn:hover {
   background: #0a4385;
 }
 
+/* Texte jobs */
 .jobs p {
   font-size: 14px;
 }
 
+/* Liens dans jobs */
 .jobs a:not(.primary-btn) {
   color: #555;
   text-decoration: underline;
 }
 
+/* Footer */
 .footer {
   background: var(--dark);
   padding: 22px 0 34px;
   color: #bfc4cc;
 }
 
+/* Grille footer */
 .footer-grid {
   display: grid;
   grid-template-columns: 1.6fr 1fr 1.6fr 1fr;
@@ -428,6 +468,7 @@ a {
   align-items: start;
 }
 
+/* Titres footer */
 .footer h3 {
   color: white;
   font-size: 27px;
@@ -435,6 +476,7 @@ a {
   font-weight: 800;
 }
 
+/* Textes et liens footer */
 .footer a,
 .footer p {
   display: block;
@@ -443,21 +485,25 @@ a {
   font-size: 14px;
 }
 
+/* Logo footer */
 .footer-logo {
   margin-top: 55px;
 }
 
+/* Réseaux sociaux */
 .socials {
   display: flex;
   gap: 18px;
 }
 
+/* Icônes réseaux sociaux */
 .socials a {
   font-size: 30px;
   font-weight: 800;
   margin: 0;
 }
 
+/* Bouton retour en haut */
 #topBtn {
   position: fixed;
   right: 22px;
@@ -476,26 +522,31 @@ a {
   box-shadow: var(--shadow);
 }
 
+/* Affichage du bouton retour en haut */
 #topBtn.show {
   opacity: 1;
   pointer-events: auto;
 }
 
+/* Animation d’apparition */
 .reveal {
   opacity: 0;
   transform: translateY(35px);
   transition: opacity .75s ease, transform .75s ease;
 }
 
+/* État visible de l’animation */
 .reveal.show {
   opacity: 1;
   transform: none;
 }
 
+/* Animation pulse */
 .pulse {
   animation: pulse 2s infinite;
 }
 
+/* Keyframes pulse */
 @keyframes pulse {
   0%,
   100% {
@@ -507,6 +558,7 @@ a {
   }
 }
 
+/* Responsive tablette */
 @media (max-width: 900px) {
   .hero h1 {
     font-size: 44px;
@@ -544,6 +596,7 @@ a {
   }
 }
 
+/* Responsive petit écran */
 @media (max-width: 580px) {
   .container,
   .navbar {
@@ -733,6 +786,7 @@ a {
   }
 }
 
+/* Responsive mobile */
 @media (max-width: 480px) {
   .container,
   .navbar {
@@ -923,6 +977,7 @@ a {
   }
 }
 
+/* Responsive très petit mobile */
 @media (max-width: 360px) {
   .hero h1 {
     font-size: 29px;
